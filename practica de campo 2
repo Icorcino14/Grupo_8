@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Solicitar la edad de la mascota
+        Console.WriteLine("Ingrese la edad de la mascota (en años): ");
+        int edadMascota = int.Parse(Console.ReadLine());
+
+        // Estructura condicional doble
+        if (edadMascota >= 1)
+        {
+            Console.WriteLine("La mascota puede atenderse en consulta general.");
+        }
+        else
+        {
+            Console.WriteLine("La mascota debe ser derivada a consulta especial para cachorros.");
+        }
+
+        // Pausa antes de salir
+        Console.WriteLine("\nPresione cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
+
+
