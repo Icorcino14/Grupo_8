@@ -1,0 +1,41 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Menú de servicios veterinarios
+        Console.WriteLine("Seleccione el servicio que desea:");
+        Console.WriteLine("1. Consulta General");
+        Console.WriteLine("2. Vacunación");
+        Console.WriteLine("3. Desparasitación");
+        Console.WriteLine("4. Peluquería");
+
+        // Leer opción
+        int opcion = int.Parse(Console.ReadLine());
+
+        // Estructura de selección múltiple
+        switch (opcion)
+        {
+            case 1:
+                Console.WriteLine("Ha elegido Consulta General.");
+                break;
+            case 2:
+                Console.WriteLine("Ha elegido Vacunación.");
+                break;
+            case 3:
+                Console.WriteLine("Ha elegido Desparasitación.");
+                break;
+            case 4:
+                Console.WriteLine("Ha elegido Peluquería.");
+                break;
+            default:
+                Console.WriteLine("Opción inválida.");
+                break;
+        }
+
+        // Pausa antes de salir
+        Console.WriteLine("\nPresione cualquier tecla para salir...");
+        Console.ReadKey();
+    }
+}
