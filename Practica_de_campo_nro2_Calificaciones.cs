@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace calificaciones
+namespace Calificaciones
 {
     internal class Program
     {
@@ -87,5 +87,6 @@ namespace calificaciones
 
 
           
+
 
    
