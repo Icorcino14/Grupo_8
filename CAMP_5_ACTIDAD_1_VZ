@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Campo5_actividad._1
+{
+    internal class Program
+    {
+        // Método por valor
+        static void cuadrado(int numero) 
+        {
+            numero = numero * numero * numero;
+            Console.WriteLine("Dentro de ElevarAlCubo: " + numero);
+        }
+
+        // Método por referencia
+        static void SumarDiez(ref int numero)
+        {
+            numero = numero + 10;
+            Console.WriteLine("Dentro de SumarDiez: " + numero);
+        }
+
+        static void Main(string[] args)
+        {
+            int numero = 3;
+
+            Console.WriteLine("Número original: " + numero);
+
+            // Llamada por valor
+            cuadrado(numero);
+            Console.WriteLine("Después de ElevarAlCubo: " + numero);
+
+            // Llamada por referencia
+            SumarDiez(ref numero);
+            Console.WriteLine("Después de SumarDiez: " + numero);
+
+ 
+            Console.ReadKey();
+        }
+    }
+}
